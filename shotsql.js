@@ -20,12 +20,13 @@ let sql = 'SELECT * FROM URLS';
 console.log("SQL query: " + sql);
 n = 0;
 
-db.all(sql, [], (err, urlArray) => {
+urlArray = [];
+db.all(sql, urlArray, (err, rows) => {
     if (err) {
         throw err;
     }
     lastScreen = [];
-    urlArray.forEach((row) => {
+    rows.forEach((row) => {
         // console.log(row.URL);
         lastScreen[n] = row.LastScreenDate;
 
