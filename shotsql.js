@@ -32,7 +32,7 @@ db.all(sql, urlArray, (err, rows) => {
     console.log(urlArray);
     console.log("Previous set of screenshots at: " +  lastScreen[0]);
 
-/* PLZ HELP  -> return global value and close function here  */
+/*  return global value and close function here  */
 /////////////////////////////////////////////////////////////////////////////////////////////
 
     var dt = new Date();
